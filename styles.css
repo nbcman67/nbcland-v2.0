@@ -33,7 +33,6 @@ body {
 
 #left {
     width: 250px;
-    max-height: fit-content;
     background-color: #75b1ff;
     border: 2px solid #508ddb;
     text-shadow: 2px 2px 2px #000000;
@@ -52,6 +51,27 @@ body {
     font-size: 13px;
 }
 
+#leftold {
+    width: 250px;
+    height: 655px;
+    background-color: #75b1ff;
+    border: 2px solid #508ddb;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 10px;
+}
+
+#leftold h1 {
+    color: #508ddb;
+}
+
+#leftold p {
+    font-size: 13px;
+}
+
+#leftold li {
+    font-size: 13px;
+}
+
 #center {
     flex: 1;
     background-color: #75b1ff;
@@ -66,6 +86,24 @@ body {
 }
 
 #center p {
+    font-size: 13px;
+}
+
+#centerold {
+    flex: 1;
+    background-color: #75b1ff;
+    border: 2px solid #508ddb;
+    text-shadow: 2px 2px 2px #000000;
+    width: 400px;
+    padding: 10px;
+    height: 655px;
+}
+
+#centerold h1 {
+    color: #508ddb;
+}
+
+#centerold p {
     font-size: 13px;
 }
 
