@@ -15,7 +15,6 @@ body {
 
 #wrapper {
     width: 850px;
-    /* background-color: #cacaca; */
     margin: auto;
 }
 
@@ -24,48 +23,12 @@ body {
     height: 190px;
 }
 
-/* #header .slideshow {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-.slide.active {
-    opacity: 1;
-}
-
-.fade-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: #ffffff;
-    opacity: 0;
-    transition: opacity 3s ease-in-out;
-    pointer-events: none;
-    z-index: 2;
-}
-
-.fade-overlay.fade-in {
-    opacity: 1;
-} */
-
 #container {
     display: flex;
     background-color: #97c4ff;
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 20px;
-    /* border-top: 2px solid black; */
 }
 
 #left {
@@ -106,6 +69,16 @@ body {
     font-size: 13px;
 }
 
+#blurb {
+    height: 600px;
+    padding: 20px;
+    color: black;
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    background-color: white;
+    border: 2px solid #508ddb;
+}
+
 #right {
     width: 250px;
     background-color: #75b1ff;
@@ -132,7 +105,17 @@ body {
 #aboutmeimage {
     width: 264px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    height: auto;
+    text-align: center;
+    padding-inline: 0;
+    border: 2px solid #508ddb;
+    background-color: #00000022;
+}
+
+#oldsiteimage {
+    width: 556px;
+    float: left;
     height: auto;
     text-align: center;
     padding-inline: 0;
@@ -172,8 +155,20 @@ nav ul li a {
 nav ul li a:hover {
     color: #88bbfd;
     background-color: #4274b6;
+    text-decoration: none;
 }
 
 #active {
     color:#88bbfdcb;
+}
+
+a {
+    color: #508ddb;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
 }
