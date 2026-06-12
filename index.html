@@ -21,8 +21,26 @@
                 </ul>
             </nav>
             <div id="container">
-                <div id="left"><p>My first paragraph.</p></div>
-                <div id="center"><p>My first paragraph.</p></div>
+                <div id="left">
+                    <div id="indeximage"><img src="img/mehq.png" height="100%" width="100%"><p>Self portrait</p></div>
+                    <h4 style="margin-bottom: 10px; margin-top: 30px;">my time</h4>
+                    <div id="nzclock">Loading</div>
+                    <h4 style="margin-bottom: 10px;">your time</h4>
+                    <div id="intlclock">Loading</div>
+                </div>
+                <div id="center">
+                    <h1>welcome to my website</h1>
+                    <p>This is a revamp of my old website from around January 2024. More to come.<br><br>For now, check out the <a href="blog.html">Decrees</a> page if you are in search of my wisdom.<br>Or, maybe view the old website <a href="old.html">here</a>.</p>
+                    <h1>site updates</h1>
+                    <p>For those who want to snoop.</p>
+                    <div id="updates">
+                        <h1 style="margin-top: 0;">latest update</h1>
+                        <p>12/06/26<br>Added content to homepage, modified footer, etc.</p>
+                        <hr>
+                        <h1>older updates</h1>
+                        <p>11/06/26<br>Initial update. Added content to old page mainly.</p>
+                    </div>
+                </div>
             </div>
             <div id="footer">
                 <img src="img/button.gif"></img>
@@ -31,5 +49,47 @@
                 <p>2024-2026. Proudly made on Microsoft Windows™.<br>This website was built and tested with a Webkit-based browser. Firefox users may have a slightly different user experience.<br>Not associated with NBC or ComCast. Any similarity or reference to corporations, living or dead is purely coincidental.<br>This site is built on and only meant to be viewed on a desktop.</p>
             </div>
         </div>
+        <script>
+            function meclock() {
+            const now = new Date();
+            const options = {
+                timeZone: 'Pacific/Auckland',
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+
+            const string = now.toLocaleTimeString('en-GB', options);
+            document.getElementById('nzclock').textContent = string;
+            }
+
+            function youclock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+
+            const string = now.toLocaleTimeString('en-GB',options);
+            document.getElementById('intlclock').textContent = string;
+            }
+
+            setInterval(meclock, 1000);
+            meclock();
+
+            setInterval(youclock, 1000);
+            youclock()
+        </script>
     </body>
 </html>
