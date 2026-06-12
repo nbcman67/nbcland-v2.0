@@ -39,6 +39,12 @@ body {
     padding: 10px;
 }
 
+#stackedcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #left h1 {
     color: #508ddb;
 }
@@ -251,6 +257,15 @@ a {
 }
 
 a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+summary {
+    transition: 0.2s;
+}
+
+summary:hover {
     color: purple;
     text-decoration: underline;
 }
