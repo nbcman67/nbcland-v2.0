@@ -91,6 +91,10 @@ body {
     color: #508ddb;
 }
 
+#center h3 {
+    color: #508ddb;
+}
+
 #center p {
     font-size: 13px;
 }
@@ -193,6 +197,12 @@ body {
     background-color: #00000022;
 }
 
+.imagebox {
+    width: 128px;
+    height: 128px;
+    border: 2px solid #508ddb;
+}
+
 #nzclock {
     width: 226px;
     height: auto;
@@ -268,4 +278,10 @@ summary {
 summary:hover {
     color: purple;
     text-decoration: underline;
+}
+
+#friendgrid {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 20px;
 }
