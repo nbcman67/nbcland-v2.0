@@ -135,6 +135,10 @@ body {
     text-shadow: none;
 }
 
+#blurb h3 {
+    text-shadow: none;
+}
+
 #updates {
     height: 250px;
     padding: 20px;
