@@ -131,6 +131,10 @@ body {
     text-shadow: none;
 }
 
+#blurb h4 {
+    text-shadow: none;
+}
+
 #updates {
     height: 250px;
     padding: 20px;
